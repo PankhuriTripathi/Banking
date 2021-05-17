@@ -97,7 +97,11 @@ app.get("/history", async(req, res)=>{
     const transactions = await Transaction.find({});
     res.render("history", {transactions});
 });
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
-app.listen(process.env.PORT || 3000, process.env.IP,function(){
-	console.log('serve running');
-   });
+app.listen(port, function() {
+  console.log("Server has started");
+});
