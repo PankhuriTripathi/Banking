@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<h1 class="view-header">Customer Details</h1>
+<main>
+	<div class='table'>
+	<table>
+		 <thead class ="header1">
+			<tr>
+				<th>Customer Name</th>
+				<th>Email</th>
+				<th>Credits</th>
+				<th>Transfer</th>
+			</tr>
+		</thead>
+            <% for(let user of users){ %>
+	     <tbody class ='header2'>
+			<tr>
+				<td><%= user.name %></td>
+                <td><%= user.email%></td>
+                <td><%= user.credits%></td>
+                <form action="/view/<%= user._id %>" method="post">
+         <td><button class="select-btn">Select</a>
+         </form>
+			 </button></td>
+			</tr> 
+	</tbody>
+		 <% } %>
+	</table>
+</main>
+            
+        
+<%- include("partials/footer") %>
