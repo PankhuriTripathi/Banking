@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const User = require('./models/user');
 
-mongoose.connect('mongodb+srv://admin-pankhu:Panisno1%23@cluster0.ymowh.mongodb.net/bank_stand2', {
+mongoose.connect('mongodb://localhost:27017/bank', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
