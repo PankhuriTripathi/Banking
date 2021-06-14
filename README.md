@@ -11,5 +11,7 @@ Host the webside. Check in code in gitlab.
 
 # Stack used:
 Front-end: HTML, CSS, Bootstrap & JavaScript
+
 Back-end: Nodejs, EJS
+
 Database: Mongo Db, mongoose
